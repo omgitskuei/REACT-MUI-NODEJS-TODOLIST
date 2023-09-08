@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A React, Google MUI, Node.js task/todo list app",
+  "main": "App.js",
+  "scripts": {
+    "test": "artillery run test.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omgitskuei/REACT-MUI-NODEJS-TODOLIST.git"
+  },
+  "keywords": [
+    "todolist"
+  ],
+  "author": "Omgitskuei",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/omgitskuei/REACT-MUI-NODEJS-TODOLIST/issues"
+  },
+  "homepage": "https://github.com/omgitskuei/REACT-MUI-NODEJS-TODOLIST#readme",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/material": "^5.14.8"
+  }
+}
