@@ -25,7 +25,7 @@ export const register = async(request, response) => {
             surName,
             firstName,
             userName,
-            pwHash,
+            password: pwHash,
             email,
             pic,
             taskList
