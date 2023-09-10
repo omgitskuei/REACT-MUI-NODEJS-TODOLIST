@@ -32,7 +32,6 @@ const UserSchema = new mongoose.Schema(
             required: true,
             min: 5,
             max: 50,
-            unique: true,
         },
         pic: {
             type: String,
@@ -40,7 +39,7 @@ const UserSchema = new mongoose.Schema(
         },
         taskLists: {
             type: Array,
-            default: [],
+            default: [],    // stores array of ids
         }
     },
     {

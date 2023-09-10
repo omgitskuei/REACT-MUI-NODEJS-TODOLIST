@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const TaskSchema = new mongoose.Schema(
     {
+        tasklistId: {
+            type: String,
+            required: true,
+        },
         completed: {
             type: Boolean ,
             default: false,
@@ -22,7 +26,6 @@ const TaskSchema = new mongoose.Schema(
             type: String,
             default: "",
             max: 50,
-            required: true,
         }
     },
     {

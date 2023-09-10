@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const TasklistSchema = new mongoose.Schema(
     {
+        userId: {
+            type: String,
+            required: true,
+        },
         title: {
             type: String,
             default: "Untitled Tasklist",
@@ -18,7 +22,7 @@ const TasklistSchema = new mongoose.Schema(
         },
         tasks: {
             type: Array,
-            default: [],
+            default: [],    // stores array of ids
         }
     },
     {
