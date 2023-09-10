@@ -32,11 +32,16 @@ export const register = async(request, response) => {
         })
 
         // Save user data to db
-        const savedUser = newUser.save();
+        const savedUser = await newUser.save();
         
-        // Report success, and return user data
-        response.status(201).json(savedUser);   // return 201 for "successful creation"
-    } catch (error) {
-        response.status(500).json({errorMsg: error.message});
+        // Report success (201), and return user data
+        response.status(201).json({
+            user: savedUser,
+            msg: "New user registered",
+        });
+    } catch (err) {
+        response.status(500).json({
+            msg: err.message
+        });
     }
 }
