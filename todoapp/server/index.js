@@ -13,7 +13,6 @@ import userRoutes from "./routes/users.js";
 import { register } from "./controllers/auth.js";
 import { verifyToken } from "./middleware/auth.js";
 import User from "./models/User.js";
-import { users } from "./data/index.js";
 
 /* Configurations - middleware */
 const __filename = fileURLToPath(import.meta.url); // wraps fileUrl for dirname
