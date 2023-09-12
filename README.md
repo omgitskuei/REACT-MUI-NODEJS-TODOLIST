@@ -1,57 +1,43 @@
-# REACT-MUI-NODEJS-TODOLIST
-React, Google Material UI, Node.js, RESTful API Todo List
+# Todo List app
 
-Documentation for Practical Test
-This documentation assumes the reader is developing on Windows.
-This project uses the following tech stack:
-NVM, Node.js
-NPM
-HTML, CSS, JS, React, Google Material UI (MUI)
-Node.js
-MongoDB
+This project was written to the following specifications.
 
 
-Installations & Setup
-Github
-Create a repository on github and clone the project into the local project folder
+The project uses the following tech stack:
+- React
+- Google MUI
+- NextJs
+- NVM
+- NPM
+- NodeJs
+- HTML
+- CSS
+- JS
 
-For this project where there’s only one dev, it is ok to commit straight to main. Remember to commit often.
-NVM & Node.js
+## Installation
+### NVM & Node.js
 Use NVM to version manage Node.js.
 Navigate to https://github.com/coreybutler/nvm-windows#readme and install NVM to manage NPM versions. Click “Download Now!”. 
-
 It will redirect the user to the “Latest release” page - click on and download “nvm-setup.exe”.
+Click through the downloaded installer. Open Windows terminal and enter 
+[nvm --v]
+This should return the version number like “1.1.11”.
 
-Click through the downloaded installer. Open Windows terminal and enter “nvm --v”, this should return the version number like “1.1.11”.
+Open Windows terminal, enter 
+[nvm install lts] 
+to install the long-term support version of npm. At the time of this documentation, it’s Version 18.17.1. 
+Enter 
+[nvm use 18.17.1]
+to use this version of npm.
+Use 
+[nvm on]
+to turn on NVM management. NVM may recommend you uninstall any previously installed NPM that was not installed through NVM.
 
-Open Windows terminal, enter “nvm install lts” to install the long-term support version of npm. At the time of this documentation, it’s Version 18.17.1. Enter “nvm use 18.17.1” to use this version of npm.
-nvm install lts
-nvm use 18.17.1
-nvm on
-
-Check to see if the Node version has successfully swapped to 18.17.1 by entering this command into terminal “node -v”.
+Check to see if the Node version has successfully swapped to 18.17.1 by entering this command into terminal 
+[node -v].
 
 
-
-VSCode
-Download VSCode here https://code.visualstudio.com/download, download the user installer x86 Windows. Follow the steps of the installer wizard.
-
-Open VSCode and open a VSCode terminal using the top menu bar.
-
-Create a folder in the local computer’s file system somewhere to store the project. Use the terminal and “cd” and “mkdir” commands or use the file system. The screenshot uses “app” for folder name. 
-Init Project Package.JSON
-Use “npm init” in VSCode terminal to create a new project’s package.json file inside the app folder. There will be prompts like package name. Enter to use the default value inside the () brackets.
-package name: app
-version: 1
-description: A React, Google MUI, Node.js task/todo list app
-entry point: App.js
-test command artillery run test.yml
-git repository: https:// github.com/omgitskuei/REACT-MUI-NODEJS-TODOLIST.git
-keywords: todolist
-author: Omgitskuei
-license: GPL-3.0
-
-The resulting package.json should look like below:
+#### Below still work in progress
 
 
 Load testing tool Artillery
