@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  mode: "light",
   user: null,
   token: null,
-  posts: [],
+  taskLists: [],
+  tasks: [],
 };
 
 export const authSlice = createSlice({
@@ -18,10 +18,13 @@ export const authSlice = createSlice({
     setLogout: (state) => {
       state.user = null;
       state.token = null;
+      state.taskLists = [];
+      state.tasks = [];
     },
     setTasklists: (state, action) => {
       if (state.user) {
         state.user.tasklists = action.payload.tasklists;
+        state.taskLists = action.payload.tasklists;
       } else {
         console.error("User tasklist non-existent");
       }
