@@ -39,7 +39,7 @@ const initialValuesRegister = {
 };
 
 const initialValuesLogin = {
-  emauserNameil: "",
+  userName: "",
   password: "",
 };
 
