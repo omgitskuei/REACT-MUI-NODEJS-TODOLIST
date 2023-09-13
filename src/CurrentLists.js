@@ -31,16 +31,6 @@ function createData(name, description, progress) {
   };
 }
 
-const handleEdit = (event) => {
-  alert("Edit!");
-  console.log(event.target);
-};
-
-const handleDelete = (event) => {
-  alert("Delete! Go!");
-  console.log(event.target);
-};
-
 const rows = [
   createData("Groceries", "Gotta get food", "85%"),
   createData("Pricer Interview", "Practical fullstack todo..", "60%"),
@@ -201,7 +191,7 @@ function EnhancedTableToolbar(props) {
         <>
           <Tooltip title="Delete">
             <IconButton>
-              <DeleteIcon onClick={handleDelete} />
+              <DeleteIcon />
             </IconButton>
           </Tooltip>
         </>
@@ -343,7 +333,7 @@ export default function CurrentLists() {
                     <TableCell>
                       <Tooltip title="Edit">
                         <IconButton>
-                          <EditIcon onClick={handleEdit} />
+                          <EditIcon/>
                         </IconButton>
                       </Tooltip>
                     </TableCell>

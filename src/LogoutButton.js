@@ -11,6 +11,7 @@ export default function LoginButton() {
     return (
         <Button variant="contained" onClick={handleClick}>
           <LogoutOutlinedIcon /> 
+          { 'Logout' }
         </Button>
     );
   }
