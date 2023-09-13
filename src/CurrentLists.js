@@ -108,6 +108,7 @@ function EnhancedTableHead(props) {
     rowCount,
     onRequestSort,
   } = props;
+  
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
@@ -192,7 +193,7 @@ function EnhancedTableToolbar(props) {
           id="tableTitle"
           component="div"
         >
-          Current lists
+          {'Current lists'}
         </Typography>
       )}
 

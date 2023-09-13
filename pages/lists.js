@@ -38,7 +38,7 @@ export default function lists() {
         </Typography>
         {/* Breadcrumbs */}
         <Stack
-          direction={{ xs: "column", sm: "row" }}
+          direction={{ xs: "row", sm: "row" }}
           spacing={{ xs: 1, sm: 1 }}
         >
           <p>Breadcrumbs~</p>

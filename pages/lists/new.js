@@ -12,7 +12,12 @@ import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 
+import { MongoClient, ObjectId } from 'mongodb';
+
 export default function NewList() {
+  MongoClient
+
+
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
 
@@ -44,7 +49,7 @@ export default function NewList() {
         </Typography>
         {/* Breadcrumbs */}
         <Stack
-          direction={{ xs: "column", sm: "row" }}
+          direction={{ xs: "row", sm: "row" }}
           spacing={{ xs: 1, sm: 1 }}
         >
           <p>Breadcrumbs~</p>
@@ -90,14 +95,13 @@ export default function NewList() {
           spacing={{ xs: 1, sm: 1 }}
         >
           <Link underline="hover" color="inherit" href="/lists">
-            <Button variant="contained" noLinkStyle onClick={handleSave}>
+            <Button variant="contained" onClick={handleSave}>
               <SaveOutlinedIcon />
             </Button>
           </Link>
           {/* <Link underline="hover" color="inherit" href=""> */}
             <Button
               variant="contained"
-              noLinkStyle
               onClick={handleClear}
             >
               <BackspaceOutlinedIcon />
